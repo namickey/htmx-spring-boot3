@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>メニュー画面</title>
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+</head>
+<body>
+    <h1>メニュー画面</h1>
+    
+    <button hx-get="/itemList" hx-target="#result" hx-trigger="click">
+        検索
+    </button>
+
+    <div id="result">
+
+    </div>
+
+    <a th:href="@{/master/item/regist/index}" href="master/item/index.html">itemマスタ登録</a>
+</body>
+</html>
